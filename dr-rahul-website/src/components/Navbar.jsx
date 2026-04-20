@@ -107,3 +107,8 @@ export default function Navbar() {
           >
             Book Appointment
           </a>
+        </div>
+      </div>
+    </header>
+  )
+}
