@@ -1,4 +1,34 @@
+import { useEffect, useRef, useState } from 'react'
 import drPhoto from '../assets/dr-rahul-gupta.png'
+import useInView from '../hooks/useInView'
+
+function CountUp({ target, suffix = '', duration = 1800 }) {
+  const [count, setCount] = useState(0)
+  const [ref, isVisible] = useInView()
+
+  useEffect(() => {
+    if (!isVisible) return
+    const isNumeric = !isNaN(parseInt(target))
+    if (!isNumeric) { setCount(target); return }
+
+    const end = parseInt(target)
+    let start = 0
+    const step = Math.ceil(end / (duration / 30))
+    const timer = setInterval(() => {
+      start += step
+      if (start >= end) { setCount(end); clearInterval(timer) }
+      else setCount(start)
+    }, 30)
+    return () => clearInterval(timer)
+  }, [isVisible, target, duration])
+
+  const isNumeric = !isNaN(parseInt(target))
+  return (
+    <span ref={ref}>
+      {isNumeric ? count : target}{isNumeric && parseInt(target) > 0 ? suffix : ''}
+    </span>
+  )
+}
 
 const badges = [
   {
@@ -144,8 +174,25 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Animated stats bar */}
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            { value: '11', suffix: '+', label: 'Years Experience' },
+            { value: 'FICO', suffix: '', label: 'UK Certified Fellow' },
+            { value: '5', suffix: '', label: 'Research Publications' },
+            { value: '4', suffix: '+', label: 'Professional Societies' },
+          ].map((stat, i) => (
+            <div key={i} className="bg-white rounded-2xl p-5 text-center shadow-sm border border-gray-100">
+              <div className="text-2xl lg:text-3xl font-extrabold text-blue-700">
+                <CountUp target={stat.value} suffix={stat.suffix} />
+              </div>
+              <div className="text-xs lg:text-sm text-gray-500 mt-1 font-medium">{stat.label}</div>
+            </div>
+          ))}
+        </div>
 
       </div>
     </section>
   )
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

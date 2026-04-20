@@ -1,22 +1,23 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from './components/About'
 import Services from './components/Services'
 import Achievements from './components/Achievements'
-import AchievementsCases from './components/AchievementsCases'
 import Testimonials from './components/Testimonials'
 import Education from './components/Education'
 import FAQ from './components/FAQ'
 import BookAppointment from './components/BookAppointment'
 import Footer from './components/Footer'
+import FloatingCTA from './components/FloatingCTA'
 
 function App() {
   return (
-    <div className="font-sans bg-white">
+    <div className="font-sans bg-white pb-20 md:pb-0">
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Services />
-        <AchievementsCases />
         <Achievements />
         <Testimonials />
         <Education />
@@ -24,6 +25,7 @@ function App() {
         <BookAppointment />
       </main>
       <Footer />
+      <FloatingCTA />
     </div>
   )
 }
