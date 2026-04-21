@@ -64,6 +64,7 @@ export default function Hero() {
   return (
     <section
       id="home"
+      style={{ scrollMarginTop: '80px' }}
       className="relative pt-28 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-br from-blue-50 via-white to-sky-50 overflow-hidden"
     >
       {/* Background decorative circles */}
@@ -115,7 +116,9 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
               <a
-                href="#book"
+                href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-base"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

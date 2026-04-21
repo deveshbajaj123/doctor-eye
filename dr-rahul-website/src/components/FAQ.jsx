@@ -50,7 +50,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" style={{ scrollMarginTop: '80px' }} className="py-20 bg-white">
       <div className="container mx-auto px-6 lg:px-10 max-w-4xl">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 px-4 py-2 rounded-full mb-4">

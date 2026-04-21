@@ -59,7 +59,9 @@ export default function Navbar() {
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="#book"
+            href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +103,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#book"
+            href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
             className="mt-2 bg-blue-700 text-white text-center font-semibold py-3 px-6 rounded-full hover:bg-blue-800 transition-colors"
           >

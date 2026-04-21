@@ -71,7 +71,7 @@ const tagColorMap = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" style={{ scrollMarginTop: '80px' }} className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 px-4 py-2 rounded-full mb-4">
@@ -112,7 +112,9 @@ export default function Services() {
 
         <div className="text-center mt-12">
           <a
-            href="#book"
+            href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 shadow-md hover:shadow-lg"
           >
             Schedule an Eye Consultation

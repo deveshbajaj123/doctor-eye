@@ -7,7 +7,7 @@ const contactNumbers = [
 
 export default function BookAppointment() {
   return (
-    <section id="book" className="py-20 bg-gradient-to-br from-blue-50 via-white to-sky-50">
+    <section id="book" style={{ scrollMarginTop: '80px' }} className="py-20 bg-gradient-to-br from-blue-50 via-white to-sky-50">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-3xl overflow-hidden shadow-2xl">
           <div className="flex flex-col lg:flex-row">
@@ -48,7 +48,9 @@ export default function BookAppointment() {
               </div>
 
               <a
-                href="tel:+911302205000"
+                href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-white text-blue-700 hover:bg-blue-50 font-bold text-lg px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

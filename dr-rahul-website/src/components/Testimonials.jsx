@@ -94,7 +94,7 @@ function VideoCard({ testimonial }) {
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+    <section id="testimonials" style={{ scrollMarginTop: '80px' }} className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-20 w-64 h-64 bg-blue-300 rounded-full blur-3xl" />

@@ -54,7 +54,9 @@ export default function Footer() {
               +91 130 2205000
             </a>
             <a
-              href="#book"
+              href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs font-semibold bg-blue-700 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-colors"
             >
               Book Appointment
@@ -74,7 +76,9 @@ export default function Footer() {
       {/* Mobile sticky CTA */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 z-50 shadow-lg">
         <a
-          href="#book"
+          href="https://calendly.com/aryanbhatia0111/dr-rahul-consultation"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 w-full bg-blue-700 text-white font-bold py-3.5 rounded-xl text-base"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

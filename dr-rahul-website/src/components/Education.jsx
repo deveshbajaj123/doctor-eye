@@ -34,7 +34,7 @@ const memberships = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 bg-gray-50">
+    <section id="education" style={{ scrollMarginTop: '80px' }} className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-10 max-w-5xl">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 px-4 py-2 rounded-full mb-4">
