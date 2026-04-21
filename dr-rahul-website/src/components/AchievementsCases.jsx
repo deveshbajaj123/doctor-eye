@@ -4,7 +4,7 @@ import postOpImg from '../assets/post-op-achievement-2.jpg'
 
 export default function AchievementsCases() {
   return (
-    <section id="achievements-cases" className="py-20 bg-blue-50">
+    <section id="achievements" style={{ scrollMarginTop: '80px' }} className="py-20 bg-blue-50">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-700 bg-white shadow-sm px-4 py-2 rounded-full mb-4">

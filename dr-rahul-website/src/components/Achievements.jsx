@@ -28,7 +28,7 @@ const publications = [
 
 export default function Achievements() {
   return (
-    <section id="achievements" style={{ scrollMarginTop: '80px' }} className="py-20 bg-white">
+    <section id="achievements-detail" className="py-20 bg-white">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 px-4 py-2 rounded-full mb-4">
